@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Rewrite to www
+    RewriteCond %{HTTP_HOST} ^rolet\.com$ [NC]
+    RewriteRule ^(.*)$ http://www.rolet.com/$1 [L,R=301]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    #Redirect 302 ^/microsoft-exchange-hosting$ /email
+    #RewriteRule ^/microsoft-exchange-hosting/?$ /email [L]
+    #RewriteRule ^faqq$ /email [L]
+    #RewriteRule ^/asdf$ /email [L]
+    #RewriteRule ^/asdf/* /email [L]
+    #RewriteRule ^/asdf /email [L]
+    #RedirectMatch ^/asdf(.*)$ /email [L]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

@@ -1,0 +1,101 @@
+// Base
+$base-font-size: 16px;
+$black: #333;
+$less-black: #666;
+$full-black: #000;
+$white: #fff;
+$grey: #ccc;
+$green: #6c6;
+$red: #c66;
+$full-red: #f00;
+$dark-grey: #999;
+$darker-grey: #2e2e2e;
+$darker-grey2: #aaa;
+$darker-grey3: #232323;
+
+$yellow: #ff3;
+$yellow2: #dd3;
+
+$black-alpha: rgba(51, 51, 51, .8);
+$black-alpha2: rgba(0, 0, 0, .35);
+$black-alpha3: rgba(51, 51, 51, .5);
+$black-alpha4: rgba(0, 0, 0, .5);
+$white-alpha: rgba(255, 255, 255, .9);
+$white-alpha2: rgba(255, 255, 255, .07);
+$white-alpha3: rgba(204, 204, 204, .5);
+$rolet-blue: #08538c;
+$darker-blue: #036;
+$light-blue: #69c;
+$light-blue2: #7fb3fc;
+$light-blue3: #6598de;
+$light-grey: #eaeaea;
+$light-grey2: #f5f5f5;
+$light-grey3: #f8f8f8;
+$light-grey4: #e0e0e0;
+$light-grey5: #eee;
+$primary-nav-active: #69c;
+
+$body-bg: $darker-grey;
+$content-bg: $light-grey3;
+$page-title-bg: $white-alpha;
+$primary-nav-bg: $rolet-blue;
+$hero-bg: $black-alpha;
+$hero-container-bg: $light-grey;
+$breadcrumb-container-bg: $light-grey2;
+$sub-nav-container-bg: $light-blue;
+$primary-nav-bg-scrolled: $light-blue;
+$footer-bg: $darker-grey;
+$placeholder-color: $light-grey4;
+
+$h1-font-size: 2 * $base-font-size;
+$h2-font-size: 1.625 * $base-font-size;
+$h3-font-size: 1.5 * $base-font-size;
+$h4-font-size: 1.25 * $base-font-size;
+$h5-font-size: .83 * $base-font-size;
+$h6-font-size: .67 * $base-font-size;
+
+$default-gutter: 3rem;
+
+// Body
+// $body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #3097d1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Responsive breaks
+$screen-xsm-min: 768px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
