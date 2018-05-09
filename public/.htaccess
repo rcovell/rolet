@@ -19,14 +19,6 @@
     RewriteCond %{REQUEST_URI} (.+)/$
     RewriteRule ^ %1 [L,R=301]
 
-    #Redirect 302 ^/microsoft-exchange-hosting$ /email
-    #RewriteRule ^/microsoft-exchange-hosting/?$ /email [L]
-    #RewriteRule ^faqq$ /email [L]
-    #RewriteRule ^/asdf$ /email [L]
-    #RewriteRule ^/asdf/* /email [L]
-    #RewriteRule ^/asdf /email [L]
-    #RedirectMatch ^/asdf(.*)$ /email [L]
-
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
