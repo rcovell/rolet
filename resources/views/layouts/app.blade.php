@@ -25,7 +25,7 @@
 
     <title>{{ config('app.name', 'Rolet') }} | @yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
-    <link href="/css/app.css?asdf22" rel="stylesheet">
+    <link async href="/css/app.css?asdf22" rel="stylesheet">
     @yield('page-styles')
     <script>
       window.Laravel = <?php echo json_encode([
@@ -59,7 +59,7 @@
     </div>
 
     <script defer src="/js/app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script async defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script defer src="/js/custom.js"></script>
     @if (Request::is('*/questionnaire') || Request::is('company/contact'))
       <script src="https://www.google.com/recaptcha/api.js?onload=vueRecaptchaApiLoaded&render=explicit" async defer></script>
