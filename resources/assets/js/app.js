@@ -1,13 +1,5 @@
 require('./bootstrap');
-// require('./primary-navigation.js');
 require('./custom.js');
-
-// require('./vendor/equalize.min.js');
-// import './vendor/equalize.min.js';
-// import {helloWorld} from './primary-navigation.js';
-
-// window.Prism = require('prismjs');
-// import Prism from 'prismjs';
 
 window.Vue = require('vue');
 
@@ -184,8 +176,6 @@ const app = new Vue({
       });
     },
     onVerify: function(msg) {
-      // console.log('message');
-      // console.log(msg);
       this.$refs.questionnaire.submit();
     },
     onExpired: function() {

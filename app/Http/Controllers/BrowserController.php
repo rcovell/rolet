@@ -16,11 +16,6 @@ class BrowserController extends Controller
     //
   }
 
-  // public function test() {
-  //   \Mail::to(env('ADMIN_EMAIL'))->send(new ResponsiveTestPerformed('useice.com'));
-  //   echo 'test';
-  // }
-
   /**
    * Send invite for client.
    *

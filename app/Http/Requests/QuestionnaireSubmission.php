@@ -14,7 +14,6 @@ class QuestionnaireSubmission extends FormRequest
    */
   public function authorize()
   {
-    // return false;
     return true;
   }
 
@@ -26,7 +25,6 @@ class QuestionnaireSubmission extends FormRequest
   public function rules()
   {
     return [
-      // 'g-recaptcha-response' => 'required|captcha',
       'g-recaptcha-response' => 'required|ReCaptcha',
     ];
   }

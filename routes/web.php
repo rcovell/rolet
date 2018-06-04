@@ -262,14 +262,7 @@ Route::get('/why-rolet', function () {
   return redirect('/', 302);
 });
 
-// Route::get('/web-hosting/cpanel-website-hosting/*', function (Request $request) {
-//   $uri = str_replace('partner/', 'business/', $request->path());
-//
-//   return redirect($uri, 301);
-// });
-
 /* Development */
-// Route::get('/websites-and-apps/websites/mobile-responsive', 'BrowserController@test')->name('mobile-responsive-test');
 Route::get('/style-guide', function () {
     return view('style-guide');
 })->name('style-guide');

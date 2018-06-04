@@ -50,7 +50,6 @@
             <li><a @click.stop.prevent="sizeChanged(768)" :class="sizeClasses(768)">768</a></li>
             <li><a @click.stop.prevent="sizeChanged(800)" :class="sizeClasses(800)">800</a></li>
             <li><a @click.stop.prevent="sizeChanged(1024)" :class="sizeClasses(1024)">1024</a></li>
-            <!-- <li><a @click.stop.prevent="sizeChanged(980)" :class="sizeClasses(980)">980</a></li> -->
           </ul>
         </div>
       </div>
@@ -183,8 +182,8 @@
           }
           else {
             if (($('.mobile-cord-container').hasClass('plugin')) && (this.currentCharge > 0)) {
-                $('.mobile-cord-container').removeClass('plugin');
-                $('.test-address-status-bolt').addClass('hide');
+              $('.mobile-cord-container').removeClass('plugin');
+              $('.test-address-status-bolt').addClass('hide');
             }
 
             if ((this.updateStatusCount % 10 === 0) && (this.currentCharge > 0)) {

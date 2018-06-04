@@ -191,7 +191,6 @@ class QuestionnaireController extends Controller
    * @param  \Illuminate\Http\Request  $request
    * @return \Illuminate\Http\Response
    */
-  // public function submitManagedWebsitesAndApps(QuestionnaireSubmission $request) {
   public function submitManagedWebsitesAndApps(Request $request) {
     \Mail::to(env('ADMIN_EMAIL'))->send(new ManagedWebsitesAndAppsQuestionnaire($request));
     return \Redirect::route('websites-and-apps.managed')

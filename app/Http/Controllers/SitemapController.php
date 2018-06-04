@@ -24,8 +24,6 @@ class SitemapController extends Controller
    * @return \Illuminate\Http\Response
    */
   public function create(Request $request) {
-    // CHANGE_FREQUENCY_YEARLY
-    // ->setChangeFrequency(Url::CHANGE_FREQUENCY_MONTHLY)
     SitemapGenerator::create(env('APP_URL'))
       ->writeToFile(public_path('sitemap.xml'));
     return \Response::json(true);
